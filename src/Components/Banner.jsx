@@ -6,7 +6,7 @@ import Container from '../Layout/Container';
 
 const Banner = () => {
     return (
-        <section className='bg-primary relative'>
+        <section className='bg-primary '>
             <Container>
                 <Flex className='justify-between pt-[82px] pb-[172px] items-center'>
                     <div>
