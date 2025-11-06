@@ -70,7 +70,7 @@ const Courses = () => {
         <section className='mt-[170px] mb-[90px]'>
             <Container>
                 <Title className='text-center' title='আমাদের কোর্স সমুহ' subTitle='আমাদের সমস্ত কোর্স সুদক্ষ মেন্টর দ্বারা পরিচালিত  এবং সমৃদ্ধ রিসোর্স দ্বারা পরিপূর্ণ'></Title>
-                <div className="grid grid-cols-3 gap-6 mb-11 mt-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-11 mt-16 p-6 xl:p-0">
                     {
                         displayCount.map((course)=>(
                             <CourseCard course={course}></CourseCard>

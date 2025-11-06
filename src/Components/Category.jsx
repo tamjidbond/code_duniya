@@ -12,7 +12,7 @@ import next from './../assets/next.png';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./custom-slick.css"; 
+import "./custom-slick.css";
 
 function SampleNextArrow(props) {
   const { onClick } = props;
@@ -50,6 +50,34 @@ const Category = () => {
     cssEase: "linear",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          arrows: false
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: false,
+          centerMode: true
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          centerMode: true
+        },
+      },
+    ],
   };
 
   const items = [

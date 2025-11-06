@@ -46,6 +46,48 @@ const WhyBest = () => {
     cssEase: "linear",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: false,
+          centerMode: true,
+          centerPadding: '10px'
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+          centerMode: true,
+          centerPadding: '10px'
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+          centerMode: false,
+          centerPadding: '10px'
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          centerMode: true,
+          centerPadding: '10px'
+        },
+      },
+    ],
   };
 
   const cards = [
@@ -89,7 +131,7 @@ const WhyBest = () => {
     <section className="py-12">
       <Container>
         <Title className='text-center' title="কেন আমরাই সেরা" subTitle="কেন আপনি আমাদের লার্নার হবেন" />
-        <div className="relative mt-15"> 
+        <div className="relative mt-15 md:p-2"> 
           <Slider {...settings}>
             {cards.map((card, index) => (
               <WhyBestCard key={index} card={card} />

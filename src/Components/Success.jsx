@@ -31,17 +31,17 @@ const Success = () => {
     <section>
       <Container>
         <Title
-          className="text-center"
+          className="text-center "
           title="আমাদের সফলতার গল্পগুলো"
           subTitle="আমাদের হাতে তৈরি হওয়া প্রতিটি নক্ষত্র"
         />
-        <div className="grid grid-cols-2 gap-4 mt-[90px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 xl:p-0 mt-10 md:mt-[90px] ">
           {showVideo.map((v) => (
             <SuccessCard key={v.id} v={v} />
           ))}
         </div>
         <Button
-          className="mx-auto block mt-15 mb-24"
+          className="mx-auto block mt-8 md:mt-15 mb-15 md:mb-24"
           title={videoCount < videos.length ? 'আরও দেখুন' : 'কম দেখুন'}
           onClick={handleToggle}
         />

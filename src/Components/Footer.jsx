@@ -12,8 +12,8 @@ const Footer = () => {
         <section className='bg-primary'>
             <Container>
                 <FooterAddmission></FooterAddmission>
-                <div className='text-white flex justify-between pb-15'>
-                    <div className='font-semibold text-2xl leading-[60px]'>
+                <div className='text-white px-6 xl:px-0 lg:flex justify-between pb-15'>
+                    <div className='font-semibold text-xl xl:text-2xl leading-[60px]'>
                         <h4>আমাদের ঠিকানা</h4>
                         <p className='flex gap-4 items-center '> <FaLocationArrow></FaLocationArrow>২৮ / ২, মেহের প্লাজা, ধানমন্ডি, ঢাকা</p>
                         <p className='flex gap-4 items-center '><FaPhoneAlt></FaPhoneAlt> +৮৮ ০১৭১৫৫৫৭৮৯৬</p>
